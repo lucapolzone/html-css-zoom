@@ -58,7 +58,7 @@ header {
   width: 1920px;
   height: calc(100vh - 60px - 120px);
   overflow: hidden;
-  background-color: rgb(46, 46, 46);
+  background-color: black;
 }
 
 
@@ -99,12 +99,14 @@ main {
 
 footer {
   height: 120px;
-  background-color: black
+  background-color: rgb(46, 46, 46);
+  /* Debug */
+  position: relative;
 }
 
 
 
-.btn.btn-end-meeting {
+/* .btn.btn-end-meeting {
   height: 100%;
   border-radius: 0;
   line-height: 115px;
@@ -114,4 +116,67 @@ footer {
 .btn.btn-end-meeting span {
   display: inline-block;
   vertical-align: middle;
+} */
+
+
+
+/* Questo è da vedere se si può centralizzare col wrapper nell'header */
+.wrapper-btn.wrapper-btn-footer {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Anche questi si possono centralizzare */
+.footer-left {
+  width: 10%;
+  height: 90px;
+  font-size: 2rem;
+  /* debug */
+  border: 2px dashed white;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-middle {
+  width: 40%;
+  height: 90px;
+  font-size: 2rem;
+  /* debug */
+  border: 2px dashed white;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-right {
+  width: 5%;
+  height: 90px;
+  /* debug */
+  border: 2px dashed white;
+  justify-content: space-between;
+}
+
+
+.wrapper-icon {
+  padding: 10px;
+  /* debug */
+  border: 1px dashed white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrapper-icon .fa-solid {
+  margin-bottom: 14px;
+}
+
+.wrapper-icon .fa-angle-up {
+  font-size: 1rem;
+}
+
+.icon-title {
+  font-size: 0.9rem;
 }
