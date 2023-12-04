@@ -18,14 +18,12 @@ img {
 /* todo ##UTILS */
 
 .wrapper-btn {
-  /* line-height: 30px; */
   width: 100%;
   height: 100%;
   display: inline-block;
   text-align: right;
   color: #fff;
 }
-
 
 .btn {
   vertical-align: middle;
@@ -34,6 +32,7 @@ img {
   border-radius: 10px;
 }
 
+
 /* HEADER */
 
 header {
@@ -41,13 +40,11 @@ header {
   background-color: black;
 }
 
-
 .btn.btn-speaker-view {
   margin-top: 5px;
   padding: 5px 10px;
   border-radius: 10px;
 }
-
 
 .btn.btn-resize {
   margin-top: 5px;
@@ -58,8 +55,8 @@ header {
   transform: rotate(45deg);
 }
 
-/* MAIN */
 
+/* MAIN */
 
 main {
   padding: 0 20px;
@@ -79,7 +76,6 @@ main {
   gap: 20px;
 }
 
-
 .webcam {
   flex: 0 0 200px;
   position: relative;
@@ -96,88 +92,85 @@ main {
   left: 0;
 }
 
+
 /* FOOTER */
 
-footer {
+.footer {
   height: 120px;
   background-color: rgb(46, 46, 46);
-  /* Debug */
   position: relative;
-}
-
-
-
-/* .btn.btn-end-meeting {
-  height: 100%;
-  border-radius: 0;
-  line-height: 115px;
-  padding: 0 20px;
-}
-
-.btn.btn-end-meeting span {
-  display: inline-block;
-  vertical-align: middle;
-} */
-
-
-
-/* Questo è da vedere se si può centralizzare col wrapper nell'header */
-.wrapper-btn.wrapper-btn-footer {
-  display: flex; 
+  font-size: 2rem;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-/* Anche questi si possono centralizzare */
-.footer-left {
+.footer.left {
   width: 10%;
-  height: 90px;
-  font-size: 2rem;
-  /* debug */
-  border: 2px dashed white;
-  display: flex;
-  justify-content: space-between;
 }
 
-
-.footer-middle {
+.footer.middle {
   width: 40%;
-  height: 90px;
-  font-size: 2rem;
-  /* debug */
-  border: 2px dashed white;
-  display: flex;
-  justify-content: space-between;
 }
 
-
-.footer-right {
+.footer.right {
   width: 5%;
-  height: 90px;
-  /* debug */
-  border: 2px dashed white;
-  justify-content: space-between;
 }
-
 
 .wrapper-icon {
   padding: 10px;
-  /* debug */
-  border: 1px dashed white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+footer .fa-solid {
+  font-size: 1.4rem;
 }
 
 .wrapper-icon .fa-solid {
   margin-bottom: 14px;
 }
 
-.wrapper-icon .fa-angle-up {
+.icon-title {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.wrapper-angle-up {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.wrapper-angle-up .fa-angle-up {
   font-size: 1rem;
 }
 
-.icon-title {
-  font-size: 0.9rem;
+#green-icon {
+  color: green;
+}
+
+
+/* Bottone End meeting */
+
+.btn.btn-end-meeting {
+  position: absolute;
+  right: 0;
+  border-radius: 0;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.btn.btn-end-meeting span {
+  color: red;
+  font-size: 1rem;
+}
+
+.wrapper-btn.wrapper-btn-footer {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
 }
