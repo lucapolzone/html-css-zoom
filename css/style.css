@@ -10,6 +10,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+  display: block;
+}
 
 
 /* todo ##UTILS */
@@ -41,48 +44,46 @@ header {
 
 .btn.btn-speaker-view {
   margin-top: 5px;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 10px;
 }
 
 
 .btn.btn-resize {
   margin-top: 5px;
-  padding: 10px;
+  padding: 5px;
 }
 
-
-
-/* ====== */
-.wrapper {
-  width: 1920px;
-  height: calc(100vh - 60px - 120px);
-  overflow: hidden;
-  background-color: black;
+.fa-arrows-up-down-left-right {
+  transform: rotate(45deg);
 }
-
 
 /* MAIN */
 
+
 main {
-  width: 100%;
   padding: 0 20px;
-  height: 100vh;
-  overflow: scroll;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+  overflow: auto;
+  height: calc(100vh - 60px - 120px);
+  background-color: black;
 }
 
-.webcam {
-  width: 225px;
-  /* margin: 1rem 1.2rem; */
-  height: 140px;
-  background-color: #d4d4d4;
+.wrapper-main {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 15px 0;
   display: flex;
-  align-items: flex-end;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+
+.webcam {
+  flex: 0 0 200px;
+  position: relative;
+  background-color: aquamarine;
 }
 
 .webcam-label {
@@ -90,9 +91,9 @@ main {
   background-color: #555555;
   padding: 5px;
   color: white;
-  position: relative;
-  bottom: 0;
-  margin: 5px 0;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
 }
 
 /* FOOTER */
